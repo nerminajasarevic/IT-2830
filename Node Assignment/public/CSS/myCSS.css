@@ -1,0 +1,25 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+* {
+    background-color: white;
+}
+div {
+    text-align: center;
+}
+section {
+    text-align: center;
+}
+table,td{
+    border: 1px solid black;
+}
+
+.tac{
+    text-align: center;
+    height: 10vh;
+    width: 20vw;
+    margin-left: 100px;
+    padding: 10px;
+    float: inline-end;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="CSS/myCSS.css">
+
+    </head>
+
+    <body>
+
+        <h1>Create Login</h1>
+
+        <form action="/register" method="POST">
+
+            <div>
+                <label for="name">User</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+        
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+        
+            <div>
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password" required>
+            </div>
+        
+            <section>
+                <button type="submit">Submit</button>
+                <a href="/login">Login</a>
+            </section>
+        
+        </form>
+    </body>
+</html>
