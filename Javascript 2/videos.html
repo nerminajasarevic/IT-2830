@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="javascript2.css">
+        <title>Nermina Jasarevic</title>
+        <script>
+            function bufferBar() 
+            {
+                var x = document.getElementById("video1");
+                document.getElementById("demo").innerHTML = "Start: " + x.buffered.start(0) + " End: " + x.buffered.end(0);
+            }
+        </script>  
+    </head>
+    <body>
+        <ul>
+            <li><a href="menu.html" target="blank">Menu</a></li>
+        </ul>
+        <video id = video1 width = "500" height="300">
+            <source src = "FinishedShape.mp4" type = "video/mp4"> browser does not support HTML Video
+        </video>
+
+        <div>
+            <button id ="play" onclick="playPause()">Play</button>
+            <button id ="Big" onclick="makeBig()">Big</button>
+            <button id ="Normal" onclick="makeNormal()">Normal</button>
+            <button id ="Small" onclick="makeSmall()">Small</button>
+            <button onclick="bufferBar()">Buffer Bar</button>
+        </div>
+
+        <div>
+            <button id ="one" onclick="changeVideo('FinishedShape.mp4')">Video 1</button>
+            <button id ="two" onclick="changeVideo('maskLiner.mp4')">Video 2</button>
+            <button id ="three" onclick="changeVideo('TweezHot.mp4')">Video 3</button>
+        </div>
+
+        <section>
+            <p id="myVideoID"></p>
+        </section>
+        
+        <section>
+            <p id="demo"></p>
+        </section>
+
+        <script src="javascript2.js" async defer></script>
+    </body>
+</html>

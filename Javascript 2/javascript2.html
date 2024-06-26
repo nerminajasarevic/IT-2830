@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="javascript2.css">
+        <title>Nermina Jasarevic</title>
+        <script type = "text/javascript">
+            function changeSource(video)
+            {
+                document.getElementById('frame').src=video;
+            }
+        </script>
+    </head>
+    <body>
+        <ul>
+            <li><a href="menu.html" target="blank">Menu</a></li>
+        </ul>
+        <iframe id = "frame" src ="https://www.youtube.com/embed/husuUwtA-Gc" id="frame1"></iframe>
+        <section>
+            <p>A Kyrgyzstan journey to experience the nomad culture. Get to know the people, their daily lifestyle and their culture.</p>
+            <input type="button" onclick="changeSource('https://www.youtube.com/embed/husuUwtA-Gc')" value="Video 1">
+        </section>
+        <br /><br />
+        <section>
+            <p>These children undertake their journey to school all by themselves. For up to four hours, they march through one of the most beautiful but also one of the most dangerous Mexican landscapes.</p>
+            <input type="button" onclick="changeSource('https://www.youtube.com/embed/vKoO18-3yL8')" value="Video 2">
+        </section>
+        <br /><br />
+        <section>
+            <p>In 1936, a family of Russian Old Believers journeyed deep into Siberia's vast taiga to escape persecution and protect their way of life.</p>
+            <input type="button" onclick="changeSource('https://www.youtube.com/embed/tt2AYafET68')" value="Video 3">
+        </section>
+        <br /><br />
+        <section>
+            <p>One man leaves the city life behind to build a cheap off grid log cabin and homestead in the Canadian wilderness, including a log home, an outdoor kitchen, an outhouse, a woodshed and a sauna bathhouse.</p>
+            <input type="button" onclick="changeSource('https://www.youtube.com/embed/AxM9FYSs8V4')" value="Video 4">
+        </section>
+        <br /><br />
+        
+    </body>
+</html>
